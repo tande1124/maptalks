@@ -1,0 +1,6 @@
+现场数据库脚本规范：
+
+----shenzhiyong@ 20190531
+create or replace view gis_v_asylumarea as
+select d.ASYLUMAREAID,d.ASYLUMAREANAME AS "NAME",d.CONTACTHTEL,d.UPDATETIME,d.ADDRESS,d.DISTRICTCODE,d.LONGITUDE as X,d.LATITUDE as Y from RES_ASYLUMAREA_PT d;
+

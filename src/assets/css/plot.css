@@ -1,0 +1,322 @@
+
+/*=========================标绘箱start=============================*/
+.plotbox .window-caption{
+    background: #2f6ec1;
+    border-radius:8px 8px 0 0;
+}
+.plotbox .heading{
+    background-color:#EEEDEB;
+    border: 1px solid transparent;
+    border-color: #ddd;
+}
+.plotbox a{
+    cursor: pointer;
+    display: block;
+    max-width: 140px;
+    padding: 3px 10px;
+    text-align: center;
+}
+.plotbox p{
+    margin-top: 0;
+}
+.plotbox .table tbody td{
+    width: 105px;
+}
+ .plotbox-position{
+    top: 130px;
+    left: 450px;
+  }
+  .plotbox {
+    height: 450px;
+    width: 350px;
+  }
+  .plotbox .title {
+    height: 40px;
+    font-size: 18px;
+    vertical-align: middle;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    cursor: move;
+  }
+  .plotbox .title > span {
+    display: inline;
+    margin: 8px;
+  }
+  .plotbox .title > span:nth-child(1) {
+    position: absolute;
+    left: 5px;
+  }
+  .plotbox .title > span:nth-child(2) {
+    position: absolute;
+    right: 5px;
+  }
+  .plotbox .close {
+    cursor: pointer;
+  }
+  .plotbox .content {
+    background: #fff;
+  }
+  .el-collapse-item__header {
+    background-color: #eeedeb;
+    border-color: #ddd;
+    font-size: 16px;
+    padding-left: 15px;
+  }
+  .el-collapse-item__content{
+      padding-bottom: 10px;
+  }
+/*=========================标绘箱end=============================*/
+
+/*=====================图标字体文件样式start===============================*/
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?afwuky');
+    src:url('../fonts/icomoon.eot?#iefixafwuky') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?afwuky') format('woff'),
+    url('../fonts/icomoon.ttf?afwuky') format('truetype'),
+    url('../fonts/icomoon.svg?afwuky#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon_size {font-size:35px; opacity:0.9;}
+.glyphicon_size2 {font-size:31px; opacity:0.9;}
+.glyphicon_size6 {font-size:40px; margin-top:15px;font-weight:bold}
+.glyphicon_size7 {font-size:42px; margin-top:15px;font-weight:bold}
+.glyphicon_size3 {font-size:43px;color: #ffffff;margin-top:15px;}
+.glyphicon_size4  {font-size:43px;color: #ffffff;}
+.glyphicon_size5{font-size:26px; opacity:0.9;margin-top:-5px; margin-right:-5px;}
+.glyphicon_size24{font-size:28px;opacity:0.5;}
+.glyphicon_size22{font-size:22px}
+.btn-img{ border: 0; background:none; }
+.shadow{
+    margin:0;
+    padding: 0;
+    border:0; background:none;
+    box-shadow:0px 0px 6px #999;
+    -moz-box-shadow:0px 0px 6px #999;
+    -webkit-box-shadow:0px 0px 6px #999;
+}
+
+
+
+/*===一级菜单图标start===*/
+.icon-dvr:before {content: "\eac3";}/*开始*/
+.icon-filter-center-focus:before {content: "\eb9e";}/*查询分析*/
+.icon-brush2:before { content: "\eb70";}/*基本标绘*/
+.icon-track-changes:before {content: "\ea0b";}/*网络分析*/
+.icon-filter-b-and-w:before {content: "\eb9d";}/*模型分析*/
+.icon-group:before {content: "\ec5a";}/*协同会商*/
+.icon-vpn-lock:before { content: "\ec57";}/*空间数据管理 一级*/
+/*===一级菜单图标over===*/
+
+
+
+/*===菜单图标start===*/
+.icon-file-upload:before {content: "\eb34";}/*传文件*/
+.icon-clear:before {content: "\ea86";}/*关闭*/
+.icon-cancel-circle:before {content: "\e72c";}/*圆形删除*/
+.icon-icon-person:before {content: "\ec95";}/*转移管理员*/
+.icon-info5:before {content: "\e9ba";}/*元素选择*/
+.icon-info-outline:before {content: "\e9bb";}/*元素识别*/
+.icon-signal-cellular-4-bar:before {content: "\ead9";}/*要素选择*/
+.icon-signal-cellular-connected-no-internet-4-bar:before {content: "\eade";}/*要素识别*/
+.icon-FormPolygon:before {content: "\ec8e";}/*多边形*/
+.icon-layers:before {content: "\ebf6";}/*图层管理*/
+.icon-playlist-add:before {content: "\ea41";}/*添加图层*/
+.icon-pin-drop:before {content: "\ec19";}/*定位*/
+.icon-group-add:before {content: "\ec5b";}/*会商*/
+.icon-person-add:before {content: "\ec68";}/*创建新会商*/
+.icon-folder-special:before {content: "\ec3f";}/*标绘工具箱*/
+.icon-info5:before {content: "\e9ba";}/*提示*/
+.icon-gps-fixed:before {content: "\eac4";}/*坐标测量*/
+.icon-ruler:before {content: "\e8ea";}/*长度测量*/
+.icon-ruler2:before {content: "\e8eb";}/*面积测量*/
+.icon-storage2:before {content: "\eaf3";}/*空间数据管理 二级*/
+.icon-reorder:before {content: "\e9dd";}/*显示查询列表*/
+.icon-filter-tilt-shift:before {content: "\eba3";}/*点缓冲分析*/
+.icon-border-horizontal:before {content: "\eafd";}/*线缓冲分析*/
+.icon-select-all:before {content: "\ea9c";}/*矩形缓冲分析*/
+.icon-tab-unselected:before {content: "\ea04";}/*多边形缓冲分析*/
+.icon-grain:before {content: "\ebab";}/*元素分析*/
+.icon-hdr-strong:before {content: "\ebb0";}/*要素分析*/
+.icon-blur-on:before {content: "\eb68";}/*服务范围分析*/
+.icon-border-vertical:before {content: "\eb04";}/*最短路径分析*/
+.icon-timelapse:before {content: "\ebdc";}/*最近设施分析*/
+.icon-rotate-left:before {content: "\ebd3";}/*刷新*/
+.icon-add-circle:before {content: "\ea81";}/*新增 */
+.icon-clear:before {content: "\ea86";}/*删除 */
+.icon-edit3:before {content: "\eb8b";}/*修改 */
+.icon-done-all:before {content: "\e9a6";}/*选择 */
+.icon-warning3:before {content: "\ea25";}/*报错 */
+.icon-publ:before {content: "\ec6c";}/*全图 */
+.icon-map4:before {content: "\ec16";}/*输出地图 */
+.icon-filter-hdr:before {content: "\eba1";}/*地震 */
+.icon-drawer3:before {content: "\e68d";}/*管理标绘 */
+.icon-drawer2:before {content: "\e68c";}/*保存标绘 */
+.icon-search3:before {content: "\e9e2";}/*查询标绘 */
+/*===标绘图标start===*/
+.icon-signal-wifi-statusbar-null:before {content: "\eaf2";}/*扇形*/
+.icon-map:before {content: "\e677";}/*输出map*/
+.icon-finestraightarrow:before {content: "\ecb6";}/*细直箭头*/
+.icon-singlearrow:before {content: "\ecd4";}/*单箭头*/
+.icon-arrow05:before {content: "\ed03";}/*直箭头*/
+.icon-doublearrow:before { content: "\ecaf";}/*双箭头*/
+.icon-CurveArrow-01:before {content: "\ed00";}/*单曲箭头*/
+.icon-trending-up:before {content: "\ea0f";}/*折线*/
+.icon-Curve:before {content: "\ecfe";}/*曲线*/
+.icon-check-box-outline-blank:before {content: "\ec71";}
+.icon-panorama-fisheye:before {content: "\ebc9";}
+.icon-Rectangular:before {content: "\ecff";}/*矩形*/
+.icon-signal-wifi-4-bar:before {content: "\eae6";}/*扇形*/
+.icon-brightness-1:before {content: "\eb69";}/*圆形*/
+.icon-camber:before {content: "\ecfd";}/*圆弧*/
+.icon-format-color-text:before {content: "\eb0d";}/*文本*/
+.icon-delete:before {content: "\e9a2";}/*清空*/
+.icon-cancel5:before {content: "\ec27";}
+
+.icon-supervisor-account:before {content: "\e9fe";}
+.icon-account-child:before {content: "\e987";}
+.icon-local-shipping:before {content: "\ec13";}/*卡车*/
+.icon-directions-bus:before {content: "\ebed";}/*客车*/
+.icon-fire:before {content: "\e6d6";}/*火灾地点*/
+.icon-adjust:before {content: "\eb62";}/*点标记*/
+.icon-nature-people:before {content: "\ebc4";}
+.icon-traff:before {content: "\ec20";}/*交通事故点*/
+.icon-disc-full:before {content: "\ec38";}/*其他事故点*/
+.icon-plane:before {content: "\e94d";}/*空中机动*/
+.icon-rocket2:before {content: "\e94f";}/*炮弹路线*/
+.icon-battery-charging-20:before {content: "\eaae";}/*电力抢修*/
+.icon-local-hospital:before {content: "\ec03";}/*医疗*/
+.icon-lab2:before {content: "\e8a2";}/*防化*/
+.icon-directions-walk:before {content: "\ebf3";}/*专业救援*/
+.icon-assistant-photo:before {content: "\eb63";}/*军队*/
+.icon-format-paint:before {content: "\eb14";}/*工程*/
+.icon-swap-calls:before {content: "\ea7b";}/*救援路线*/
+.icon-dovetailarrowplotting:before {content: "\ecb0";}/*燕尾箭头*/
+.icon-point1:before {content: "\ec77";}/*椭圆*/
+.icon-police:before {content: "\ec79";}/*警察*/
+.icon-fireman:before {content: "\ec7a";}/*消防*/
+.icon-worker:before {content: "\ec7b";}/*工人*/
+.icon-internt_web_technology-13:before {content: "\ec83";}/*专家*/
+.icon-ambulance:before {content: "\f0f9";}/*救护车*/
+.icon-truck2:before {content: "\e94a";}/*消防车*/
+.icon-stethoscope:before {content: "\f0f1";}/*医生*/
+.icon-user-md:before { content: "\f0f0";}
+.icon-fire-extinguisher:before {content: "\f134";}/*消防*/
+.icon-svg:before {content: "\ec78";}/*武警*/
+.icon-space-shuttle:before {content: "\f197";}/*空中运输*/
+.icon-list4:before {content: "\e8e8";}/*导航*/
+.icon-expand-more:before {content: "\ec2d";}
+.icon-expand-less:before {content: "\ec2c";}
+.icon-add:before {content: "\e968";}
+.icon-person:before {content: "\ec67";}
+.icon-keyboard-arrow-left:before {content: "\eb44";}/*左右箭头*/
+.icon-keyboard-arrow-right:before {content: "\eb45";}
+.icon-create:before {content: "\ea8a";}/*标绘编辑*/
+.icon-ViperTypeBarbedWire:before {content: "\ecdb";}/*蝮蛇型铁丝网*/
+.icon-AntiaircraftArtilleryCamp:before {content: "\ec9b";}/*高射炮兵营地*/
+.icon-DistrctionLine:before {content: "\ecad";}/*遭破坏的线路*/
+.icon-DistrctionRoad:before {content: "\ecae";}/*遭破坏的道路*/
+.icon-MainPoints:before {content: "\ecc1";}/*要点*/
+.icon-support2:before {content: "\ecd7";}/*支撑点2*/
+.icon-support3:before {content: "\ecd8";}/*支撑点3*/
+.icon-AirRescue:before {content: "\ec99";}/*空中救援队伍*/
+.icon-ConstrctionRainway:before {content: "\eca9";}/*在建铁路*/
+.icon-AccidentVehicleRoute:before {content: "\ec96";}/*事故车辆行进路线*/
+.icon-cancel4:before {content: "\e884";}/*error*/
+.icon-AirTransport:before {content: "\ec9a";}/*空中运输*/
+.icon-AirMotor:before { content: "\ec98";}/*空中机动*/
+.icon-ShellRoute:before {content: "\ecd3";}/*炮弹路线*/
+.icon-ViperTypeBarbedWire:before {content: "\ecdb";}/*蝮蛇型铁丝网*/
+.icon-AntiaircraftArtilleryCamp:before {content: "\ec9b";}/*高射炮*/
+.icon-MotorizedColumns:before {content: "\ecc4";}/*摩托化行军*/
+.icon-AirDefenseForcesMarchingColumn:before {content: "\ec97";}/*防空兵行军*/
+.icon-TankInfantryAttackFormation:before {content: "\ecda";}/*坦克及步战兵*/
+.icon-AttackFormation:before {content: "\eca2";}/*进攻队形*/
+.icon-OffensiveDenfense1:before {content: "\ecc7";}
+.icon-OffensiveDenfense2:before {content: "\ecc8";}
+.icon-OffensiveDenfense3:before {content: "\ecc9";}/*进攻转防守3*/
+.icon-ArtilleryColumn:before {content: "\ec9f";}/*炮兵行军中队*/
+.icon-InvestigationSreach:before {content: "\ecbc";}/*侦查搜索*/
+.icon-Sentinel:before {content: "\ecd2";}/*流动哨*/
+.icon-TankAttackFormation:before {content: "\ecd9";}/*坦克营进攻队形*/
+.icon-InfantryFightingVehicleEven:before {content: "\ecbb";}/*步兵战斗车连*/
+.icon-WaterRescueShip:before {content: "\ecdd";}/*水上救援舰艇*/
+.icon-RescueVehiclesColumn:before { content: "\ecd0";}/*救援车辆纵队*/
+.icon-pipeLaying:before { content: "\ed02";}/*输油管线*/
+.icon-WarningArea:before {content: "\ecde";}/*警戒区域*/
+.icon-RainwayTransportation:before {content: "\ecce";}/*铁路输送*/
+.icon-MaritimeSearchAndRescueFormation:before {content: "\ecc2";}/*海上搜救队形*/
+.icon-LineOfSeparation1:before {content: "\ecbf";}/*隔离线1*/
+.icon-LineOfSeparation2:before {content: "\ecc0";}
+.icon-FixedPipeline:before {content: "\ecb8";}/*固定输油管线*/
+.icon-LandMobileTechnology:before {content: "\ecbd";}/*陆地机动技术*/
+.icon-cordon:before {content: "\ecaa";}/*警戒线*/
+.icon-LargeTransmissionLine:before {content: "\ecbe";}/*大型输电线路*/
+.icon-CompactTransmission:before {content: "\eca8";}/*小型输电线路*/
+.icon-EcologicalLine:before {content: "\ecb1";}/*生态隔离线*/
+.icon-HelicopterTransport:before {content: "\ecb9";}/*直升机输送*/
+.icon-AccidentVehicleRoute:before {content: "\ec96";}/*事故车辆行进路线*/
+.icon-HighwayTransportation:before {content: "\ecba";}/*公路运输*/
+.icon-EvacuateVictims:before {content: "\ecb5";}/*灾民撤离*/
+.icon-professionalRescueFormation2:before {content: "\eccd";}/*专业救援队形2*/
+.icon-DangerouSection:before {content: "\ecac";}/*危险路段*/
+.icon-waterWay:before {content: "\ecdc";}/*水路运输*/
+.icon-AssemblyArea:before {content: "\eca1";}/*集结区域*/
+.icon-AirRescue:before {content: "\ec99";}/*空中救援队伍*/
+.icon-ConstrctionRainway:before {content: "\eca9";}/*在建铁路*/
+.icon-support2:before {content: "\ecd7";}
+.icon-support3:before {content: "\ecd8";}/*支撑点3*/
+.icon-MainPoints:before { content: "\ecc1";}/*要点*/
+.icon-DistrctionLine:before {content: "\ecad";}/*遭破坏的线路*/
+.icon-DistrctionRoad:before {content: "\ecae";}/*遭破坏的道路*/
+.icon-seaBlockade-01:before {content: "\ed01";}/*海上封锁线*/
+.icon-area:before {content: "\ece0";}/*集结区域*/
+.icon-area2:before {content: "\ece1";}/*警戒区域*/
+.icon-airhelp:before {content: "\ece2";}/*空中救援队伍*/
+.icon-eventcontrol:before {content: "\ece3";}/*事故区域控制*/
+.icon-eventexpend:before {content: "\ece4";}/*事故区域蔓延*/
+.icon-guanglan:before {content: "\ece5";}/*通讯光缆线路*/
+.icon-resource:before {content: "\ece6";}/*物质集散地*/
+.icon-middleline:before {content: "\ece7";}/*中型输电线路*/
+.icon-FightingVehicleEven:before { content: "\ece8";}/*步兵战斗车连*/
+
+.icon-arc:before {content: "\ece9";}/* 弧线 */
+.icon-Armed:before {content: "\ecea";}/* 武警 */
+.icon-army1:before {content: "\eceb";}/* 军队 */
+.icon-AfterOnline:before {content: "\ecfc";}/* 突击方向 */
+.icon-cieclearc:before {content: "\eced";}/* 圆弧 */
+.icon-closecurve:before {content: "\ecee";}/* 封闭曲线 */
+.icon-cmldef:before {content: "\ecef";}/* 防化 */
+.icon-Communicationopticalcableline:before {content: "\ecf0";}/* 通信光缆线路 */
+.icon-electricity:before {content: "\ecf1";}/* 电力抢修 */
+.icon-expert:before {content: "\ecf2";}/* 专家 */
+.icon-fire2:before {content: "\ecf3";}/* 消防 */
+.icon-investigation:before {content: "\ecf4";}/* 侦查搜索 */
+.icon-Maritimemobiletechnology:before {content: "\ecf5";}/* 海上机动技术 */
+.icon-medical:before {content: "\ecf6";}/* 医疗 */
+.icon-morearrow:before {content: "\ecf7";}/* 多箭头标绘 */
+.icon-patrol:before {content: "\ecf8";}/* 流动哨 */
+.icon-Professionalrescue:before {content: "\ecf9";}/* 专业救援 */
+.icon-project:before {content: "\ecfa";}/* 工程 */
+.icon-shieldwire1:before {content: "\ecfb";}/* 隔离线1 */
+.icon-deleteall:before {content: "\ecfc";}/* 全部清除 */
+.icon-zx:before {content: "\ed04";}/* 折线 */
+
+.icon-hand:before {content: "\e8b3";}/* 平移 */
+.icon-transform:before {content: "\ebe3";}/* 测量选择 */
+
+/*=========================图标字体文件样式end=============================*/
+
