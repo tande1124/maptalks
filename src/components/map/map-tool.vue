@@ -2,21 +2,14 @@
  * @Description: 地图工具栏
  * @version: 0.1.0
  * @Author: wsw
- * @LastEditors: wsw
+ * @LastEditors: tande
  * @Date: 2019-04-26 10:47:16
- * @LastEditTime: 2019-04-26 15:32:13
+ * @LastEditTime: 2019-09-12 11:38:21
  -->
 
 <template>
   <div class="tool-container">
-    <el-menu
-      :default-active="activeIndex"
-      class="el-menu-demo"
-      mode="horizontal"
-      @select="handleSelect"
-      background-color="#545c64"
-      text-color="#fff"
-      active-text-color="#ffd04b">
+    <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
       <el-submenu index="1">
         <template slot="title">地图</template>
         <el-menu-item index="mapChange-1">矢量</el-menu-item>
@@ -38,11 +31,7 @@
 
 <script>
 import Vue from 'vue'
-import {
-  Menu,
-  Submenu,
-  MenuItem
-} from 'element-ui'
+import { Menu, Submenu, MenuItem } from 'element-ui'
 import { mapGetters } from 'vuex'
 import maptalks from '#/assets/maptalks/maptalks-ext.es.js'
 Vue.use(Menu)
@@ -225,7 +214,7 @@ export default {
 }
 </script>
 <style scoped>
-.tool-container{
+.tool-container {
   position: absolute;
   top: 0;
   left: 0;

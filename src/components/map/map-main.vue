@@ -4,7 +4,7 @@
  * @Author: wsw
  * @Date: 2019-02-13 10:34:06
  * @LastEditors: tande
- * @LastEditTime: 2019-09-11 11:12:55
+ * @LastEditTime: 2019-09-12 09:53:10
  -->
 <template>
   <div id="map"></div>
@@ -148,10 +148,7 @@ export default {
               run: linstener
             }
             mapMapLinstener.push(_linstener)
-          } else if (
-            linstener instanceof Object &&
-            typeof linstener.run === 'function'
-          ) {
+          } else if (linstener instanceof Object && typeof linstener.run === 'function') {
             linstener.type = linstener.type || 'click'
             mapMapLinstener.push(linstener)
           } else {
