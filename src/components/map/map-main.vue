@@ -4,7 +4,7 @@
  * @Author: wsw
  * @Date: 2019-02-13 10:34:06
  * @LastEditors: tande
- * @LastEditTime: 2019-09-12 09:53:10
+ * @LastEditTime: 2019-10-09 21:42:12
  -->
 <template>
   <div id="map"></div>
@@ -166,11 +166,8 @@ export default {
               mapMapLinstener.splice(i, 1)
             } else if (typeof id === 'string' && v.id === id) {
               mapMapLinstener.splice(i, 1)
-            } else if (
-              typeof id === 'object' &&
-              ((!id.type && v.id === id.id && v.run === id.run) ||
-                (v.id === id.id && v.type === id.type && v.run === id.run))
-            ) {
+            } else if (typeof id === 'object' && ((!id.type && v.id === id.id && v.run === id.run) ||
+                (v.id === id.id && v.type === id.type && v.run === id.run))) {
               mapMapLinstener.splice(i, 1)
             }
           })
@@ -192,6 +189,7 @@ export default {
             )
           })
         },
+        // 展示信息弹窗
         showInfoWindow ({ x, y, dx, dy, title, content, lnglat, offset, data, methods }) {
           infoWindow.config('dy', dy || 0)
           infoWindow.config('dx', dx || 0)
@@ -201,6 +199,7 @@ export default {
           this._renderTemplate(uid, content, data, methods)
           infoWindow.show({ x, y })
         },
+        // 清除图层
         clear () {
           this.hideInfoWindow()
           this.getInstance().getLayers(layer => {
@@ -209,6 +208,10 @@ export default {
             }
             return layer.getJSONType() !== 'TileLayer'
           })
+        },
+        // 飞行定位
+        flyTo (coordinate) {
+          myMap.panTo(coordinate)
         },
         // 弹窗 html 渲染
         // @private

@@ -1,3 +1,9 @@
+<!--
+ * @Descripttion:
+ * @Date: 2019-09-11 09:41:34
+ * @LastEditors: tande
+ * @LastEditTime: 2019-10-09 22:31:16
+ -->
 <!--绘图模块-->
 <template>
   <div></div>
@@ -79,7 +85,7 @@ function emit (tag, geometry) {
 }
 // 绘图开始
 function drawOn (value) {
-  drawTool.setMode(value).enable()
+  drawTool.setMode(value).enable() // 绘图工具设计模式、启动事件
 }
 // 绘图结束
 function drawOff (param) {
