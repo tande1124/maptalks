@@ -7,7 +7,7 @@
  * @LastEditTime: 2019-10-09 21:42:12
  -->
 <template>
-  <div id="map"></div>
+	<div id="map"></div>
 </template>
 
 <script>
@@ -204,7 +204,8 @@ export default {
           this.hideInfoWindow()
           this.getInstance().getLayers(layer => {
             if (layer.getJSONType() !== 'TileLayer' && layer.getId() !== 'boundary_layer' && layer.getId() !== 'label_area') {
-              layer.clear()
+              // layer.clear()
+              layer.remove()
             }
             return layer.getJSONType() !== 'TileLayer'
           })
@@ -414,7 +415,7 @@ function creatLines (data, options) {
 </script>
 <style scoped>
 #map {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 </style>

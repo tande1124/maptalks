@@ -1,43 +1,43 @@
 <!-- 标绘编辑面板 -->
 <template>
-  <map-drag :fixed="false" class="detail-position" :style="styleP" v-show="isShow">
-    <div class="detail-dialog">
-      <header class="title clip">
-        编辑面板
-        <span class="close" @click="close">x</span>
-      </header>
-      <main>
-        <div class="l-h" v-show="item.type!=='label'">
-          <label>线宽：</label>
-          <el-input-number v-model="numSize" @change="handleSizeChange" :min="1" :max="10" size="small"></el-input-number>
-        </div>
-        <div class="l-h" v-show="item.type!=='label'">
-          <label>线颜色：</label>
-          <el-color-picker v-model="colorLine" @change="handleColorLineChange"></el-color-picker>
-        </div>
-        <div class="l-h" v-show="item.type==='label'">
-          <label>字体大小：</label>
-          <el-input-number v-model="fontSize" @change="handleFontSizeChange" :min="12" :max="30" size="small"></el-input-number>
-        </div>
-        <div class="l-h" v-show="item.type==='label'">
-          <label>字体颜色：</label>
-          <el-color-picker v-model="fontColor" @change="handleFontColorChange"></el-color-picker>
-        </div>
-        <div class="l-h" v-show="item.type==='label'">
-          <label>字体背景：</label>
-          <el-color-picker v-model="fontFrameColor" @change="handleFontFrameColorChange"></el-color-picker>
-        </div>
-        <div class="l-h" v-show="item.type==='polygon'">
-          <label>填充颜色：</label>
-          <el-color-picker v-model="colorPolygon" @change="handleColorPolygonChange"></el-color-picker>
-        </div>
-        <div class="l-h" v-show="item.type==='polygon'">
-          <label>填充透明度：</label>
-          <el-input-number v-model="alphaSize" @change="handleAlphaChange" :min="0.1" :max="1.0"  :precision="1" :step="0.1" size="small"></el-input-number>
-        </div>
-      </main>
-    </div>
-  </map-drag>
+	<map-drag :fixed="false" class="detail-position" :style="styleP" v-show="isShow">
+		<div class="detail-dialog">
+			<header class="title clip">
+				编辑面板
+				<span class="close" @click="close">x</span>
+			</header>
+			<main>
+				<div class="l-h" v-show="item.type!=='label'">
+					<label>线宽：</label>
+					<el-input-number v-model="numSize" @change="handleSizeChange" :min="1" :max="10" size="small"></el-input-number>
+				</div>
+				<div class="l-h" v-show="item.type!=='label'">
+					<label>线颜色：</label>
+					<el-color-picker v-model="colorLine" @change="handleColorLineChange"></el-color-picker>
+				</div>
+				<div class="l-h" v-show="item.type==='label'">
+					<label>字体大小：</label>
+					<el-input-number v-model="fontSize" @change="handleFontSizeChange" :min="12" :max="30" size="small"></el-input-number>
+				</div>
+				<div class="l-h" v-show="item.type==='label'">
+					<label>字体颜色：</label>
+					<el-color-picker v-model="fontColor" @change="handleFontColorChange"></el-color-picker>
+				</div>
+				<div class="l-h" v-show="item.type==='label'">
+					<label>字体背景：</label>
+					<el-color-picker v-model="fontFrameColor" @change="handleFontFrameColorChange"></el-color-picker>
+				</div>
+				<div class="l-h" v-show="item.type==='polygon'">
+					<label>填充颜色：</label>
+					<el-color-picker v-model="colorPolygon" @change="handleColorPolygonChange"></el-color-picker>
+				</div>
+				<div class="l-h" v-show="item.type==='polygon'">
+					<label>填充透明度：</label>
+					<el-input-number v-model="alphaSize" @change="handleAlphaChange" :min="0.1" :max="1.0" :precision="1" :step="0.1" size="small"></el-input-number>
+				</div>
+			</main>
+		</div>
+	</map-drag>
 </template>
 
 <script>
@@ -52,14 +52,13 @@ Vue.use(InputNumber)
 Vue.use(ColorPicker)
 Vue.use(Button)
 
-let _item = null
 export default {
   components: {
     MapDrag
   },
   methods: {
     open (item) {
-      _item = item
+      this.item = item
       this.isShow = true
       let xy = item.xy
       this.styleP = {
@@ -115,7 +114,7 @@ export default {
           }
           break
       }
-      this.setSymbol(_item.geo, symbol)
+      this.setSymbol(this.item.geo, symbol)
     },
     // 线宽
     handleSizeChange (value) {
@@ -167,47 +166,48 @@ export default {
 </script>
 <style scoped>
 .detail-position {
-  z-index: 8;
+	z-index: 8;
 }
-.detail-dialog{
-  width: 300px;
-  height: 300px;
-  color: #000;
-  background: #fff;
-  box-shadow: 0 2px 12px 0 rgba(173, 113, 113, 0.4);
-  border: 1px solid #d7d9de;
-  border-radius: 0 0 4px 4px;
+.detail-dialog {
+	width: 300px;
+	height: 300px;
+	color: #000;
+	background: #fff;
+	box-shadow: 0 2px 12px 0 rgba(173, 113, 113, 0.4);
+	border: 1px solid #d7d9de;
+	border-radius: 0 0 4px 4px;
 }
-.title{
-  height: 32px;
-  line-height: 32px;
-  border-bottom: 1px solid #d6d5d5;
-  padding: 0 7px 0 12px;
-  font-weight: bold;
-  background: #1d7bdb;
-  color: #fff;
-  padding-right: 40px;
-  position: relative;
+.title {
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 1px solid #d6d5d5;
+	padding: 0 7px 0 12px;
+	font-weight: bold;
+	background: #1d7bdb;
+	color: #fff;
+	padding-right: 40px;
+	position: relative;
 }
-.close{
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  padding: 0 12px;
+.close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	padding: 0 12px;
 }
-main{
-  padding: 10px;
+main {
+	padding: 10px;
 }
-.l-h{
-  height: 50px;
-  line-height: 50px;
+.l-h {
+	height: 50px;
+	line-height: 50px;
 }
-.l-h > label,.l-h > div{
-  vertical-align: middle;
+.l-h > label,
+.l-h > div {
+	vertical-align: middle;
 }
-.btn{
-  margin-top: 5px;
-  text-align: center;
+.btn {
+	margin-top: 5px;
+	text-align: center;
 }
 </style>
